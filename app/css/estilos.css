@@ -1,0 +1,326 @@
+
+
+
+.navbar{
+	
+
+	border: 1px solid #000;
+	background-color: #0cc8ba;
+	margin-bottom: 0;
+	
+}
+
+
+.sr-only{
+
+	background-color:#0cc8ba; 
+}
+.eslogan{
+
+	width:120px; 
+	height:150px;
+	
+}
+
+.boxlogin{
+	margin:40px auto;
+	width: 300px;
+	border-radius: 20px;
+	-webki-border-radius:20px;
+	-moz-border-radius:20px;
+	
+}
+
+.Titulo1{
+
+	text-align: center;
+	font-family: arial;
+	font-size: 40px;
+}
+
+.jt1{
+	margin-bottom: 0;
+	background-color:#0cc8ba;
+
+}
+
+.jtmain{
+	margin-top:0;
+	margin-bottom: 0;
+	background-color:#f3f8f7;
+	 
+	
+}
+
+.iniciarsesion{
+/*	height: 35px;
+	margin: 10px  80px;
+	border-radius: 5px;
+	*/
+border: none;
+background: #3a7999;
+color: #f2f2f2;
+padding: 10px;
+font-size: 18px;
+border-radius: 5px;
+margin: 13px 70px;
+box-sizing: border-box;
+transition: all 500ms ease;
+}
+
+
+.iniciarsesion:hover {
+/*background: rgba(0,0,0,0);*/
+/*color: #5cb85c;*/
+/*box-shadow: inset 0 0 0 3px #5cb85c;*/
+}
+
+.main{
+	
+	/*background-color:#f3f8f7;*/
+	/*border: 2px solid #ccc;*/
+	/*width: 100%;*/
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 0;
+}
+
+
+.cuadro1{
+	width: auto;
+	height: auto; 
+	/*overflow: hidden;*/
+	border: 2px solid #ccc;
+	/*float: left;*/
+	padding: 0px;
+	text-align: justify;
+	color: #4682b4;
+	background-color: #f3f8f7;
+	border-radius: 35px;
+	margin: 20px 220px;
+
+
+
+	
+}
+
+
+.cuadro2{
+	width: auto;
+	height: auto; 
+	/*overflow: hidden;*/
+	border: 2px solid #ccc;
+	/*float: left;*/
+	padding: 0px;
+	text-align: justify;
+	color: #4682b4;
+	background-color: #f3f8f7;
+	border-radius: 35px;
+	margin: 20px 220px;
+
+
+
+	
+}
+
+.cuadro3{
+	width: auto;
+	height: auto; 
+	/*overflow: hidden;*/
+	border: 2px solid #ccc;
+	/*float: left;*/
+	padding: 0px;
+	text-align: justify;
+	color: #4682b4;
+	background-color: #f3f8f7;
+	border-radius: 35px;
+	margin: 20px 220px;
+
+
+
+	
+}
+
+.cuadro4{
+	/*width: auto;*/
+	/*height: auto; */
+	/*overflow: hidden;*/
+	/*border: 2px solid #ccc;*/
+	/*float: left;*/
+	/*padding: 0px;*/
+	/*text-align: justify;*/
+	/*color: #4682b4;*/
+	/*background-color: white;*/
+	/*border-radius: 35px;*/
+	/*margin: 40px 220px;*/
+	/*margin-bottom: 10px;*/
+
+    width: auto;
+	height: auto;
+	overflow: hidden;
+	border: 2px solid #ccc;
+	float: left;
+	padding: 50px;
+	text-align: justify;
+	color: #4682b4;
+	background-color: #f3f8f7;
+	border-radius: 35px;
+	margin:-1150px 980px;
+	
+}
+
+.tituloT{
+
+	text-align: center;
+	color: black;
+	font-size: 40px;
+
+}
+
+
+.descripcion{
+
+
+	text-align: center;
+	font-family: arial;
+	font-size: 14px;
+	color: black;
+	margin-top:60px;
+	margin: 30px 30px;
+	
+}
+
+.fotoperfil{
+	margin: 10px 40px; 
+
+	background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+
+
+}
+.nombreusuario{
+margin: 0px 20px;
+font-size: 22px;
+
+}
+
+button {
+border: none;
+background: #3a7999;
+color: #f2f2f2;
+padding: 10px;
+font-size: 18px;
+border-radius: 5px;
+margin: 18px 45px;
+box-sizing: border-box;
+transition: all 500ms ease;
+}
+
+button:hover {
+background: rgba(0,0,0,0);
+color: #3a7999;
+box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+
+.no-like{
+/*	height: 35px;
+	margin: 10px  80px;
+	border-radius: 5px;
+	*/
+border: none;
+background: #d9534f;
+color: #f2f2f2;
+padding: 10px;
+font-size: 18px;
+border-radius: 5px;
+margin: 13px 40px;
+box-sizing: border-box;
+transition: all 500ms ease;
+
+}
+
+
+.no-like:hover {
+background: rgba(0,0,0,0);
+color: #d9534f;
+box-shadow: inset 0 0 0 3px #d9534f;
+}
+
+
+
+
+.badge{
+
+	margin: 13px 20px;
+}
+
+.comentarios{
+	margin: 13px 60px;
+}
+
+
+.no-like2{
+
+
+border: none;
+background: #d9534f;
+color: #f2f2f2;
+padding: 10px;
+font-size: 18px;
+border-radius: 5px;
+margin: 10px 40px;
+box-sizing: border-box;
+transition: all 500ms ease;
+	
+}
+
+.no-like2:hover{
+background: rgba(0,0,0,0);
+color: #d9534f;
+box-shadow: inset 0 0 0 3px #d9534f;
+}
+
+
+
+
+.like2{
+
+
+border: none;
+background:#3a7999;
+color: #f2f2f2;
+padding: 10px;
+font-size: 18px;
+border-radius: 5px;
+margin: 10px 50px;
+box-sizing: border-box;
+transition: all 500ms ease;
+	
+}
+
+.like2:hover{
+background: rgba(0,0,0,0);
+color: #3a7999;
+box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.comentarios2{
+	margin: 13px 40px;
+}
+
+.pie{
+
+	border: 1px solid #000;
+	background-color: #0cc8ba;
+	margin-bottom: 0;
+}
+
+.txtpie{
+	text-align: center;
+	font-family: arial;
+	font-size: 35px;
+	color: black;
+}
