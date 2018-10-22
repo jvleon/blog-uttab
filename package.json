@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "dsteem": "^0.10.1",
+    "steemconnect": "^2.0.1",
     "webpack": "^4.19.1"
   },
   "devDependencies": {
