@@ -2,13 +2,14 @@ import React from 'react'
 import {
   Container,
   Logo,
-  Title
+  Title,
+  ButtonLogin
 } from './styled'
 
 const Header = () => (
   <Container>
     <Logo src="./img/logo.png" />
-    <Title>Blog UTTAB</Title>
+    <ButtonLogin>Iniciar sesión</ButtonLogin>
   </Container>
 )
 

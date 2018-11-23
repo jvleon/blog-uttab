@@ -6,7 +6,7 @@ export const Container = styled.footer`
   height: 100px;
   justify-content: center;
   align-items: center;
-  background-color: cyan;
+  background-color: #1CC8C2;
 `
 
 export const Text = styled.span`

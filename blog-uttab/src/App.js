@@ -4,42 +4,22 @@ import {
   Header,
   Footer
 } from './components/'
+import {
+  Home
+} from './containers'
 
-const App = () => (
+const App = (props) => (
   <Router>
-    <div>
+    <div style={{height: '100vh'}}>
+    {console.log(props)}
       <Header />
       <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/topics" component={Topics} />
+      {/* <Route path="/about" component={About} />
+      <Route path="/topics" component={Topics} /> */}
       <Footer />
     </div>
   </Router>
 )
 
-const Home = () => <h2>Home</h2>
-const About = () => <h2>About</h2>
-const Topic = ({ match }) => <h3>Requested Param: {match.params.id}</h3>
-const Topics = ({ match }) => (
-  <div>
-    <h2>Topics</h2>
-
-    <ul>
-      <li>
-        <Link to={`${match.url}/components`}>Components</Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-      </li>
-    </ul>
-
-    <Route path={`${match.path}/:id`} component={Topic} />
-    <Route
-      exact
-      path={match.path}
-      render={() => <h3>Please select a topic.</h3>}
-    />
-  </div>
-)
 
 export default App
