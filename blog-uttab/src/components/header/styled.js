@@ -29,4 +29,33 @@ export const ButtonLogin = styled.button`
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+  border: none;
+  background: #E3E3E3;
+  &&:active {
+    background-color: #A6A6A6;
+  }
+  &:hover {
+    background: #FFFFFF;
+  }
+
+`
+
+export const Redirect = styled.a`
+  width: 100px;
+  height: 30px;
+  margin: 0 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #E3E3E3;
+  text-decoration: none;
+  background: #0D2F87;
+  &&:active {
+    color: #A6A6A6;
+  }
+  &:hover {
+    color: #FFFFFF;
+  }
+  padding: 10px;
 `

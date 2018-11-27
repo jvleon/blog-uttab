@@ -3,13 +3,20 @@ import {
   Container,
   Logo,
   Title,
-  ButtonLogin
+  ButtonLogin,
+  Redirect
 } from './styled'
 
-const Header = () => (
+const Header = ({link, logged} ) => (
   <Container>
     <Logo src="./img/logo.png" />
-    <ButtonLogin>Iniciar sesión</ButtonLogin>
+    {
+      !logged && 
+      <div>
+        <Redirect href={link}>Iniciar sesión</Redirect>
+        <Redirect href="https://signup.steemit.com/">Registrarse</Redirect>
+      </div>
+    }
   </Container>
 )
 
