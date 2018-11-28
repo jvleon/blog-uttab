@@ -23,23 +23,24 @@ class ArticlePreview extends Component {
 
   render() {
     if (this.state.Redirect === true) {
-      return <Redirect to='/dashboard' />
+      const to = `/articleView?article=${this.props.index}`
+      return <Redirect to={to} />
     }
+    const { author, body, created, title, image, replies} = this.props.blog
+    console.log(this.props)
     return (
       <MainContainer onClick={() => this.onClick()}>
       <UserData>
-        <SmallText>Jvleon</SmallText>
+        <SmallText>{author}</SmallText>
       </UserData>
       <BlogContent>
-        <Title>Bienvenida</Title>
+        <Title>{title}</Title>
         <Paragraph>
-          Hola esta es una preuba hecha para que disfrutes el contenido del blog UTTAB, ejoy it the experience.
-          Hola esta es una preuba hecha para que disfrutes el contenido del blog UTTAB, ejoy it the experience.
-          Hola esta es una preuba hecha para que disfrutes el contenido del blog UTTAB, ejoy it the experience.
+          {body}
         </Paragraph>
       </BlogContent>
       <BlogData>
-        <SmallText>100 comentarios</SmallText>
+        <SmallText>{replies.length} comentarios</SmallText>
       </BlogData>
     </MainContainer>
     )
