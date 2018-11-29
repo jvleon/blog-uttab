@@ -1,9 +1,10 @@
 import React, {Component} from "react"
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom"
 import {
   Header,
   Footer,
-  ArticleView
+  ArticleView,
+  NewPost
 } from './components/'
 import {
   Home
@@ -25,16 +26,38 @@ const access_token = new URLSearchParams(document.location.search).get('access_t
 const username = new URLSearchParams(document.location.search).get('username');
 
 class App extends Component {
-  
+  constructor() {
+    super()
+    this.state = {
+      access_token: '',
+      user: ''
+    }
+    this.closeSession = this.closeSession.bind(this)
+  }
+  componentWillMount() {
+    const access_token = new URLSearchParams(document.location.search).get('access_token')
+    const username = new URLSearchParams(document.location.search).get('username')
+    access_token && localStorage.setItem('access_token', access_token)
+    username && localStorage.setItem('username', username)
+    const locatedAccessToken = localStorage.getItem('access_token')
+    const locatedUsername = localStorage.getItem('username')
+    this.setState({access_token: locatedAccessToken, user: locatedUsername},() =>{
+    })
+  }
+  closeSession () {
+    this.setState({access_token: ''})
+    localStorage.removeItem('access_token')
+    window.location.replace('http://localhost:3000/');
+  }
   render() {
+    console.log(this.state, 'state')
     return (
       <Router>
       <div style={{height: '100vh'}}>
-        <Header link={link} />
+        <Header link={link} logged={this.state.access_token}  closeSession={this.closeSession}/>
         <Route exact path="/" component={Home} />
+        <Route path="/newPost" component={() => <NewPost data={this.state} />} />
         <Route path="/articleView" component={ArticleView} />
-        {/* <Route path="/about" component={About} />
-        <Route path="/topics" component={Topics} /> */}
         <Footer />
       </div>
     </Router>

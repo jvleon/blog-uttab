@@ -27,15 +27,14 @@ export default class Home extends Component {
           .then(result => {
               var posts = []
               result.forEach(post => {
-                console.log(post)
-                  const json = JSON.parse(post.json_metadata)
-                  const image = json.image ? json.image[0] : ''
-                  const title = post.title
-                  const author = post.author
-                  const body = post.body
-                  const created = new Date(post.created).toDateString()
-                  const {replies } = post
-                  posts.push({created, body, author, title, image, replies})
+                const json = JSON.parse(post.json_metadata)
+                const image = json.image ? json.image[0] : ''
+                const title = post.title
+                const author = post.author
+                const body = post.body
+                const created = new Date(post.created).toDateString()
+                const {replies } = post
+                posts.push({created, body, author, title, image, replies})
               })
               this.setState({blog: posts})
           })
@@ -45,7 +44,6 @@ export default class Home extends Component {
   }
   render() {
     var {blog} = this.state
-    console.log(this.state, 'blog')
     return (
       <Container>
       {

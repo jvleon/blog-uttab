@@ -10,6 +10,7 @@ export const MainContainer = styled.article`
   border: 1px solid #A8A8A8;
   background-color: #fff;
   color: #848584;
+  cursor: pointer;
 `
 
 export const UserData = styled.div`

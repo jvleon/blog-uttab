@@ -33,7 +33,7 @@ export const UserData = styled.div`
 
 export const BlogContent = styled.div`
   display: flex;
-  height: 100px;
+  ${'' /* height: 100px; */}
   flex-direction: column;
   border-radius: 5px;
   color: #848584;
@@ -52,14 +52,13 @@ export const SmallText = styled.span`
   font-size: 12px;
 `
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.div`
   font-size: 14px;
   text-align: justify;
-  white-space: nowrap;
+  ${'' /* white-space: nowrap; */}
   overflow: hidden;
-  text-overflow: ellipsis;
-  height: 50px;
   margin: 5px 0;
+  padding: 10px;
 `
 
 export const Title = styled.a`

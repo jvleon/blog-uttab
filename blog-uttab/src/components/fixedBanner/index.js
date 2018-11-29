@@ -5,7 +5,8 @@ import {
 
 const Fixedbanner = () => (
   <MainContainer>
-    Disfruta de este blog creado por Jvleon
+    Disfruta de este blog creado por Jose Victor Leon,
+    Jorge Brindis y Manuel Cruz
   </MainContainer>
 )
 

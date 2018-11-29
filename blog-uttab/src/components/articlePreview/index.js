@@ -27,7 +27,6 @@ class ArticlePreview extends Component {
       return <Redirect to={to} />
     }
     const { author, body, created, title, image, replies} = this.props.blog
-    console.log(this.props)
     return (
       <MainContainer onClick={() => this.onClick()}>
       <UserData>

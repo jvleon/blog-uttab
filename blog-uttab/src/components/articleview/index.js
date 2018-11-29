@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Redirect } from 'react-router'
+import { Redirect, Link } from 'react-router-dom'
 import { Client } from 'dsteem'
 import {
   MainContainer,
@@ -20,7 +20,6 @@ class ArticleView extends Component {
     }
   }
   componentDidMount() {
-    console.log('mounted')
       const query = {
           tag: 'bloguttab',
           limit: 5,
@@ -31,18 +30,8 @@ class ArticleView extends Component {
           .then(result => {
               var posts = []
               result.map((post, i) => {
-                console.log(i,'indice')
                 const Index = parseInt(new URLSearchParams(document.location.search).get('article'))
-                console.log(Index, 'index')
-                  const json = JSON.parse(post.json_metadata)
-                  const image = json.image ? json.image[0] : ''
-                  const title = post.title
-                  const author = post.author
-                  const body = post.body
-                  const created = new Date(post.created).toDateString()
-                  const {replies } = post
                   if (Index === i) {
-                    console.log('mach')
                     this.setState({blog: post})
                   }
               })
@@ -53,10 +42,10 @@ class ArticleView extends Component {
   }
 
   render() {
-    console.log('sate', this.state)
     const { author, body, created, title, image, replies} = this.state.blog
     return (
       <MainContainer>
+      <Link to="/">Regresar</Link>
         <Content>
           <UserData>
           <SmallText>{author}</SmallText>
